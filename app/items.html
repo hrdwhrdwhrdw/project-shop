@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content register-form">
+          <h1>Регистрация</h1>
+          <form action="#" class="register-form__modal-form">
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <div class="register-form__input">
+                  <input type="text" class="search input__form register-form__log" id="inputLogin3"
+                    placeholder="Ваше имя" autocomplete="off" required>
+                  <i class="fa fa-user-plus" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <div class="register-form__input">
+                  <input type="password" class="search input__form register-form__log" id="inputPassword3"
+                    placeholder="Ваша фамилия" autocomplete="off" required>
+                  <i class="fa fa-user-plus" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <div class="register-form__input">
+                  <input type="text" class="search input__form register-form__log" id="inputName"
+                    placeholder="Ваше имя пользователя" autocomplete="off" required>
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <div class="register-form__input">
+                  <input type="text" class="search input__form register-form__log" id="inputPassword"
+                    placeholder="Ваш пароль" autocomplete="off" required>
+                  <i class="fa fa-lock input-lock" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <div class="register-form__input">
+                  <input type="text" class="search input__form register-form__log" id="inputPasswordRepeat"
+                    placeholder="Повторите пароль" autocomplete="off" required>
+                  <i class="fa fa-lock input-lock" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <div class="register-form__input">
+                  <input type="email" class="search input__form register-form__log" id="inputEmail3"
+                    placeholder="Ваш Email" autocomplete="off" required>
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="slider-items__btn button pop-up__btn"><a href="#"
+                class="button__link button__form button__reg">Зарегистрироваться</a></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content register-form">
+          <h1>Авторизация</h1>
+          <form action="#" class="register-form__modal-form">
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <div class="register-form__input">
+                  <input type="text" class="search input__form register-form__log" id="inputLoginSignIn3"
+                    autocomplete="off" placeholder="Введите имя пользователя" required>
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <div class="register-form__input">
+                  <input type="password" class="search input__form register-form__password register-form__log"
+                    autocomplete="off" placeholder="Введите пароль" id="inputPasswordSignIn3" required>
+                  <i class="fa fa-lock input-lock" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <div class="register-form__radio-check">
+                  <div class="register-form__radio-button" id="button-1">
+                    <input type="checkbox" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                  </div>
+                  <span>Запомнить меня</span>
+                  <div class="register-form__forget">
+                    <a href="#">Забыли пароль?</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="slider-items__btn button pop-up__btn"><a href="#"
+                class="button__link button__form">Войти</a></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="pop-up pop-up_add">
+      <div class="pop-up__wrapper">
+        <div class="pop-up__item-info pop-up__item-info_add">
+          <h3 class="pop-up__item-add-title">Товар "Куртка ARMANI JEANS" добавлен в корзину!</h3>
+          <div class="btn__close pop-up__close-button"><i class="fa fa-times" aria-hidden="true"></i></div>
+        </div>
+        <div class="pop-up__item-price">Стоимость товара: <span class="price">0 Р</span></div>
+        <div class="pop-up__item-total-price">Общая стоимость: <span class="total-price">0 Р</span></div>
+        <div class="pop-up__buttons">
+          <div class="slider-items__btn button pop-up__btn">
+            <a href="#" class="button__link pop-up__buy">Купить в 1 клик</a>
+          </div>
+          <div class="slider-items__btn button pop-up__btn">
+            <a href="#" class="button__link pop-up__buy pop-up__close-button">Закрыть</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pop-up pop-up_delete">
+      <div class="pop-up__item-info pop-up__item-info_add">
+        <h3 class="pop-up__item-delete-title">Товар "Куртка ARMANI JEANS" удалён из корзины!</h3>
+        <div class="btn__close pop-up__close-button"><i class="fa fa-times" aria-hidden="true"></i></div>
+      </div>
+      <div class="pop-up__item-total-price">Общая стоимость: <span class="current-price">0 Р</span></div>
+      <div class="slider-items__btn button pop-up__btn">
+        <a href="#" class="button__link pop-up__buy pop-up__close-button">Закрыть</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-lg-2">
+          <div class="header__logo">
+            <a href="http://localhost:3000/index.html" class="logo__link">
+              BEIGE
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="header__search">
+            <input type="search" id="search" class="search" placeholder="Очень быстрый поиск" autocomplete="off">
+            <ul class="search__list">
+              <a href="#" class="search__link">
+                <li class="search__item">КУРТКА Armani Jeans </li>
+              </a>
+              <a href="#" class="search__link">
+                <li class="search__item">E BRAND </li>
+              </a>
+              <a href="#" class="search__link">
+                <li class="search__item">NUMBER 399 </li>
+              </a>
+              <a href="#" class="search__link">
+                <li class="search__item">PAUL SMITH </li>
+              </a>
+              <a href="#" class="search__link">
+                <li class="search__item">КУРТКА Armani Jeans </li>
+              </a>
+              <a href="#" class="search__link">
+                <li class="search__item">J BRAND </li>
+              </a>
+              <a href="#" class="search__link">
+                <li class="search__item">NUMBER 288 </li>
+              </a>
+              <a href="#" class="search__link">
+                <li class="search__item">PAUL SMITH </li>
+              </a>
+              <a href="#" class="search__link">
+                <li class="search__item">КУРТКА Armani Jeans </li>
+              </a>
+              <a href="#" class="search__link">
+                <li class="search__item">J BRAND </li>
+              </a>
+              <a href="#" class="search__link">
+                <li class="search__item">NUMBER 463 </li>
+              </a>
+              <a href="#" class="search__link">
+                <li class="search__item">PAUL SMITH </li>
+              </a>
+              <a href="#" class="search__link">
+                <li class="search__item">КУРТКА Armani Jeans </li>
+              </a>
+              <a href="#" class="search__link">
+                <li class="search__item">J BRAND </li>
+              </a>
+              <a href="#" class="search__link">
+                <li class="search__item">NUMBER 288 </li>
+              </a>
+              <a href="#" class="search__link">
+                <li class="search__item">PAUL SMITH </li>
+              </a>
+            </ul>
+            <button class="header__input-button input-button" type="submit"></button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 d-flex header__user">
+          <div class="header__sign-in user-form wow flipInX" data-toggle="modal" data-target="#signInModal">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <div class="header__sign-in-button user-form__button">Войти</div>
+          </div>
+          <div class="header__reg user-form wow flipInX" data-toggle="modal" data-target="#registerModal">
+            <i class="fa fa-user-plus" aria-hidden="true"></i>
+            <div class="header__reg-button user-form__button">Регистрация</div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div href="#" class="header__shopping-cart d-flex align-items-center">
+            <a href="#" class="d-flex align-items-center">
+              <img src="img/shopping-cart.png" alt="shopping-cart" class="bag">
+              <div class="shopping-items__items">
+                <div class="shopping-cart__total d-flex wow flipInX">
+                  <div class="shopping-cart__total-title gray-text">Товаров - </div>
+                  <div class="shopping-cart__total-items items-bold">0</div>
+                </div>
+                <div class="shopping-cart__sum d-flex wow flipInX">
+                  <div class="shopping-cart__sum-title gray-text">на сумму</div>
+                  <div class="shopping-cart__sum-items items-bold">0</div>
+                  <i class="fa fa-rub items-bold" aria-hidden="true"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="item-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="item-page__title wow fadeInLeft" data-wow-delay="0.1s">Товары</div>
+        </div>
+      </div>
+    </div>
+    <div class="container reset-padding">
+      <div class="row">
+        <div class="col-12">
+          <div class="item-page__item-settings d-flex">
+            <div class="item-settings__newest filter-items">
+              <a href="#" class="filter_newest">Новые товары</a>
+            </div>
+            <div class="item-settings__popular filter-items">
+              <a href="#" id="filter_popular">Популярные</a>
+            </div>
+            <div class="item-settings__filter filter-items">
+              <span class="item-settings__filter-title">Сортировать:</span>
+              <a href="#" class="filter__title-list">
+                по возрастанию цены
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </a>
+              <div class="item-settings__filter-list">
+                <label class=" filter-list__item filter-list__item-greater" for="filter_greater">
+                  <input type="radio" name="filter" id="filter_greater" checked>
+                  <span class="filter-list__item-title">по возрастанию цены</span>
+                </label>
+                <label class="filter-list__item filter-list__item-lesser" for="filter_lesser">
+                  <input type="radio" name="filter" id="filter_lesser">
+                  <span class="filter-list__item-title">по убыванию цены</span>
+                </label>
+                <label for="filter_rating" class="filter-list__item filter-list__item-rating">
+                  <input type="radio" name="filter" id="filter_rating">
+                  <span class="filter-list__item-title">по рейтингу</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 reset-padding">
+          <div class="item-page__aside-filter">
+              <div class="item-page__aside-search">
+                <div class="header__search">
+                  <input type="search" id="search" class="search news-page__search_input" placeholder="Поиск по товарам"
+                    autocomplete="off">
+                  <button class="header__input-button input-button news-page__search_button" type="submit"></button>
+                </div>
+              </div>
+              <div class="item-page__filter-buttons-block d-flex justify-content-around align-items-center">
+                <div class="filter-buttons__button-wrapper filter-buttons__button-wrapper_filter">
+                  <a href="#"
+                    class="filter-buttons__button filter-buttons__button-filter-settings d-flex justify-content-center align-items-center">
+                    Фильтры
+                  </a>
+                </div>
+                <div class="filter-buttons__button-wrapper filter-buttons__button-wrapper_sort">
+                  <a href="#" class="filter-buttons__button filter-buttons__button-sort-settings d-flex justify-content-center align-items-center">
+                    Сортировка
+                  </a>
+                </div>
+              </div>
+              <div class="item-page__item-settings d-flex item-page__item-settings_hide">
+                <div class="item-settings__newest filter-items">
+                  <a href="#" class="filter_newest">Новые товары</a>
+                </div>
+                <div class="item-settings__popular filter-items">
+                  <a href="#" id="filter_popular">Популярные</a>
+                </div>
+                <div class="item-settings__filter filter-items">
+                  <span class="item-settings__filter-title">Сортировать:</span>
+                  <a href="#" class="filter__title-list">
+                    по возрастанию цены
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </a>
+                  <div class="item-settings__filter-list">
+                    <label class=" filter-list__item filter-list__item-greater" for="filter_greater">
+                      <input type="radio" name="filter" id="filter_greater" checked>
+                      <span class="filter-list__item-title">по возрастанию цены</span>
+                    </label>
+                    <label class="filter-list__item filter-list__item-lesser" for="filter_lesser">
+                      <input type="radio" name="filter" id="filter_lesser">
+                      <span class="filter-list__item-title">по убыванию цены</span>
+                    </label>
+                    <label for="filter_rating" class="filter-list__item filter-list__item-rating">
+                      <input type="radio" name="filter" id="filter_rating">
+                      <span class="filter-list__item-title">по рейтингу</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-filter__wrapper aside-filter__wrapper_hide">
+                <div class="aside-filter__price">
+                  <a href="#" class="aside-filter__price-title aside-filter_title">
+                    <i class="fa fa-angle-down rotate-arrow" aria-hidden="true"></i>
+                    <span class="bold">Цена</span>
+                  </a>
+                  <div class="aside-filter__wrapper-price aside-filter_list drop-list">
+                    <div class="aside-filter__input-price-wrapper d-flex justify-content-around align-items-center">
+                      <input type="text" class="search aside-filter__input-price aside-filter__input-price_lower"
+                        placeholder="от 3199" value="5000">
+                      <input type="text" class="search aside-filter__input-price aside-filter__input-price_higher" value="8000"
+                        placeholder="до 12000">
+                    </div>
+                    <div class="aside-filter__range-wrapper">
+                      <input type="range" class="aside-filter__range-price aside-filter__range-price_lower" min="3000"
+                        value="5000" max="12000" step="50">
+                      <input type="range" class="aside-filter__range-price aside-filter__range-price_higher" min="3000"
+                        value="8000" max="12000" step="50">
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-filter__category">
+                  <a href="#" class="aside-filter__category-title aside-filter_title">
+                    <i class="fa fa-angle-down rotate-arrow" aria-hidden="true"></i>
+                    <span class="bold">Категория</span>
+                  </a>
+                  <div class="aside-filter__category-list aside-filter_list drop-list">
+                    <label>
+                      <input type="checkbox" class="aside-filter__input">
+                      <span class="aside-filter__box aside-filter__box_list"></span>
+                      <span class="aside-filter__item-text">Мужская одежда</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" class="aside-filter__input">
+                      <span class="aside-filter__box aside-filter__box_list"></span>
+                      <span class="aside-filter__item-text">Женская одежда</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" class="aside-filter__input">
+                      <span class="aside-filter__box aside-filter__box_list"></span>
+                      <span class="aside-filter__item-text">Детская одежда</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" class="aside-filter__input">
+                      <span class="aside-filter__box aside-filter__box_list"></span>
+                      <span class="aside-filter__item-text">Обувь</span class="aside-filter__item-text">
+                    </label>
+                    <label>
+                      <input type="checkbox" class="aside-filter__input">
+                      <span class="aside-filter__box aside-filter__box_list"></span>
+                      <span class="aside-filter__item-text">Аксессуары</span class="aside-filter__item-text">
+                    </label>
+                  </div>
+                </div>
+                <div class="aside-filter__brand">
+                  <a href="#" class="aside-filter__brand-title aside-filter_title">
+                    <i class="fa fa-angle-down rotate-arrow" aria-hidden="true"></i>
+                    <span class="bold">Бренды</span class="bold">
+                  </a>
+                  <div class="aside-filter__brand-list aside-filter_list drop-list">
+                    <label>
+                      <input type="checkbox" class="aside-filter__input">
+                      <span class="aside-filter__box aside-filter__box_list"></span>
+                      <span class="aside-filter__item-text">ARMANI JEANS</span class="aside-filter__item-text">
+                    </label>
+                    <label>
+                      <input type="checkbox" class="aside-filter__input">
+                      <span class="aside-filter__box aside-filter__box_list"></span>
+                      <span class="aside-filter__item-text">GRANT</span class="aside-filter__item-text">
+                    </label>
+                    <label>
+                      <input type="checkbox" class="aside-filter__input">
+                      <span class="aside-filter__box aside-filter__box_list"></span>
+                      <span class="aside-filter__item-text">J BRAND</span class="aside-filter__item-text">
+                    </label>
+                    <label>
+                      <input type="checkbox" class="aside-filter__input">
+                      <span class="aside-filter__box aside-filter__box_list"></span>
+                      <span class="aside-filter__item-text">PAUL SMITH</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="aside-filter__special">
+                  <a href="#" class="aside-filter__special-title aside-filter_title">
+                    <i class="fa fa-angle-down rotate-arrow" aria-hidden="true"></i>
+                    <span class="bold">Акции</span>
+                  </a>
+                  <div class="aside-filter__special-list aside-filter_list drop-list">
+                    <label>
+                      <input type="checkbox" class="aside-filter__input">
+                      <span class="aside-filter__box aside-filter__box_list"></span>
+                      <span class="aside-filter__item-text">Распродажа</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" class="aside-filter__input">
+                      <span class="aside-filter__box aside-filter__box_list"></span>
+                      <span class="aside-filter__item-text">Скидка на товары</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" class="aside-filter__input">
+                      <span class="aside-filter__box aside-filter__box_list"></span>
+                      <span class="aside-filter__item-text">Тренд сезона</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" class="aside-filter__input">
+                      <span class="aside-filter__box aside-filter__box_list"></span>
+                      <span class="aside-filter__item-text">Новые поступления</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="aside-filter__apply d-flex justify-content-center align-items-center">
+                  <a href="#"
+                    class="aside-filter__button aside-filter__button_apply d-flex justify-content-center align-items-center">Применить</a>
+                </div>
+                <div class="aside-filter__reset d-flex justify-content-center align-items-center">
+                  <a href="#"
+                    class="aside-filter__button aside-filter__button_reset d-flex justify-content-center align-items-center">Сбросить</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-9 reset-padding">
+          <div class="item-page__item-block d-flex justify-content-between">
+            <div class="main-slider__item-card-small slider-item-width item-page_width" data-num="1">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <a href="#" class="item-card-small__jacket item-page__item-card">
+                <img src="img/leggins.png" alt="">
+              </a>
+              <a href="#" class="item-card-small__item-title item-page__item-link">J BRAND</a>
+              <div class="item-card-small__item-response d-flex justify-content-between align-items-center">
+                <div class="item-response__rate ">
+                  <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                  <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                  <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                  <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                  <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                  <a href="#" class="item-page__total-rates">150</a>
+                </div>
+              </div>
+              <div class="item-response__comments">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <a href="#" class="item-page__total-comments">67</a>
+              </div>
+              <div class="item-card-small__item-subtitle item-page_subtitle">Узкие джинсы</div>
+              <div class="item-card-small__item-about item-page_price">
+                <div class="item-card-small__item-price yellow-price margin-price ">
+                  5000
+                </div>
+                <i class="fa fa-rub yellow-price" aria-hidden="true"></i>
+              </div>
+            </div>
+           <div class="main-slider__item-card-small slider-item-width item-page_width" data-num="2">
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <a href="#" class="item-card-small__jacket item-page__item-card">
+               <img src="img/sneakers.png" alt="">
+             </a>
+             <a href="#" class="item-card-small__item-title item-page__item-link">NUMBER 288</a>
+             <div class="item-card-small__item-response d-flex justify-content-between align-items-center">
+               <div class="item-response__rate">
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <a href="#" class="item-page__total-rates">130</a>
+               </div>
+             </div>
+             <div class="item-response__comments">
+               <i class="fa fa-comment-o" aria-hidden="true"></i>
+               <a href="#" class="item-page__total-comments">140</a>
+             </div>
+             <div class="item-card-small__item-subtitle item-page_subtitle">Кеды 'Grant'</div>
+             <div class="item-card-small__item-about item-page_price">
+               <div class="item-card-small__item-price yellow-price margin-price ">
+                 8800
+               </div>
+               <i class="fa fa-rub yellow-price" aria-hidden="true"></i>
+             </div>
+           </div>
+           <div class="main-slider__item-card-small slider-item-width item-page_width" data-num="3">
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <a href="#" class="item-card-small__jacket item-page__item-card">
+               <img src="img/gloves.png" alt="">
+             </a>
+             <a href="#" class="item-card-small__item-title item-page__item-link">PAUL SMITH</a>
+             <div class="item-card-small__item-response d-flex justify-content-between align-items-center">
+               <div class="item-response__rate ">
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <a href="#" class="item-page__total-rates">110</a>
+               </div>
+             </div>
+             <div class="item-response__comments">
+               <i class="fa fa-comment-o" aria-hidden="true"></i>
+               <a href="#" class="item-page__total-comments">30</a>
+             </div>
+             <div class="item-card-small__item-subtitle item-page_subtitle">Кожаные перчатки</div>
+             <div class="item-card-small__item-about item-page_price">
+               <div class="item-card-small__item-price yellow-price margin-price ">
+                 3199
+               </div>
+               <i class="fa fa-rub yellow-price" aria-hidden="true"></i>
+             </div>
+           </div>
+           <div class="main-slider__item-card-small slider-item-width item-page_width" data-num="4">
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <a href="#" class="item-card-small__jacket item-page__item-card">
+               <img src="img/jacket.png" alt="">
+             </a>
+             <a href="#" class="item-card-small__item-title item-page__item-link">КУРТКА Armani Jeans</a>
+             <div class="item-card-small__item-response d-flex justify-content-between align-items-center">
+               <div class="item-response__rate ">
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <a href="#" class="item-page__total-rates">90</a>
+               </div>
+             </div>
+             <div class="item-response__comments">
+               <i class="fa fa-comment-o" aria-hidden="true"></i>
+               <a href="#" class="item-page__total-comments">83</a>
+             </div>
+             <div class="item-card-small__item-subtitle item-page_subtitle">Кожаная куртка на молнии</div>
+             <div class="item-card-small__item-about item-page_price">
+               <div class="item-card-small__item-price yellow-price margin-price ">
+                 12700
+               </div>
+               <i class="fa fa-rub yellow-price" aria-hidden="true"></i>
+             </div>
+           </div>
+           <div class="main-slider__item-card-small slider-item-width item-page_width" data-num="5">
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <a href="#" class="item-card-small__jacket item-page__item-card">
+               <img src="img/leggins.png" alt="">
+             </a>
+             <a href="#" class="item-card-small__item-title item-page__item-link">J BRAND</a>
+             <div class="item-card-small__item-response d-flex justify-content-between align-items-center">
+               <div class="item-response__rate ">
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <a href="#" class="item-page__total-rates">322</a>
+               </div>
+             </div>
+             <div class="item-response__comments">
+               <i class="fa fa-comment-o" aria-hidden="true"></i>
+               <a href="#" class="item-page__total-comments">15</a>
+             </div>
+             <div class="item-card-small__item-subtitle item-page_subtitle">Узкие джинсы</div>
+             <div class="item-card-small__item-about item-page_price">
+               <div class="item-card-small__item-price yellow-price margin-price ">
+                 5000
+               </div>
+               <i class="fa fa-rub yellow-price" aria-hidden="true"></i>
+             </div>
+           </div>
+           <div class="main-slider__item-card-small slider-item-width item-page_width" data-num="6">
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <a href="#" class="item-card-small__jacket item-page__item-card">
+               <img src="img/sneakers.png" alt="">
+             </a>
+             <a href="#" class="item-card-small__item-title item-page__item-link">NUMBER 288</a>
+             <div class="item-card-small__item-response d-flex justify-content-between align-items-center">
+               <div class="item-response__rate">
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <a href="#" class="item-page__total-rates">822</a>
+               </div>
+             </div>
+             <div class="item-response__comments">
+               <i class="fa fa-comment-o" aria-hidden="true"></i>
+               <a href="#" class="item-page__total-comments">233</a>
+             </div>
+             <div class="item-card-small__item-subtitle item-page_subtitle">Кеды 'Grant'</div>
+             <div class="item-card-small__item-about item-page_price">
+               <div class="item-card-small__item-price yellow-price margin-price ">
+                 8800
+               </div>
+               <i class="fa fa-rub yellow-price" aria-hidden="true"></i>
+             </div>
+           </div>
+           <div class="main-slider__item-card-small slider-item-width item-page_width" data-num="7">
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <a href="#" class="item-card-small__jacket item-page__item-card">
+               <img src="img/gloves.png" alt="">
+             </a>
+             <a href="#" class="item-card-small__item-title item-page__item-link">PAUL SMITH</a>
+             <div class="item-card-small__item-response d-flex justify-content-between align-items-center">
+               <div class="item-response__rate ">
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <a href="#" class="item-page__total-rates">451</a>
+               </div>
+             </div>
+             <div class="item-response__comments">
+               <i class="fa fa-comment-o" aria-hidden="true"></i>
+               <a href="#" class="item-page__total-comments">325</a>
+             </div>
+             <div class="item-card-small__item-subtitle item-page_subtitle">Кожаные перчатки</div>
+             <div class="item-card-small__item-about item-page_price">
+               <div class="item-card-small__item-price yellow-price margin-price ">
+                 3199
+               </div>
+               <i class="fa fa-rub yellow-price" aria-hidden="true"></i>
+             </div>
+           </div>
+           <div class="main-slider__item-card-small slider-item-width item-page_width" data-num="8">
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <a href="#" class="item-card-small__jacket item-page__item-card">
+               <img src="img/jacket.png" alt="">
+             </a>
+             <a href="#" class="item-card-small__item-title item-page__item-link">КУРТКА Armani Jeans</a>
+             <div class="item-card-small__item-response d-flex justify-content-between align-items-center">
+               <div class="item-response__rate ">
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <a href="#" class="item-page__total-rates">150</a>
+               </div>
+             </div>
+             <div class="item-response__comments">
+               <i class="fa fa-comment-o" aria-hidden="true"></i>
+               <a href="#" class="item-page__total-comments">53</a>
+             </div>
+             <div class="item-card-small__item-subtitle item-page_subtitle">Кожаная куртка на молнии</div>
+             <div class="item-card-small__item-about item-page_price">
+               <div class="item-card-small__item-price yellow-price margin-price ">
+                 12700
+               </div>
+               <i class="fa fa-rub yellow-price" aria-hidden="true"></i>
+             </div>
+           </div>
+           <div class="main-slider__item-card-small slider-item-width item-page_width" data-num="9">
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <a href="#" class="item-card-small__jacket item-page__item-card">
+               <img src="img/leggins.png" alt="">
+             </a>
+             <a href="#" class="item-card-small__item-title item-page__item-link">J BRAND</a>
+             <div class="item-card-small__item-response d-flex justify-content-between align-items-center">
+               <div class="item-response__rate ">
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <a href="#" class="item-page__total-rates">122</a>
+               </div>
+             </div>
+             <div class="item-response__comments">
+               <i class="fa fa-comment-o" aria-hidden="true"></i>
+               <a href="#" class="item-page__total-comments">77</a>
+             </div>
+             <div class="item-card-small__item-subtitle item-page_subtitle">Узкие джинсы</div>
+             <div class="item-card-small__item-about item-page_price">
+               <div class="item-card-small__item-price yellow-price margin-price ">
+                 5000
+               </div>
+               <i class="fa fa-rub yellow-price" aria-hidden="true"></i>
+             </div>
+           </div>
+           <div class="main-slider__item-card-small slider-item-width item-page_width" data-num="10">
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <a href="#" class="item-card-small__jacket item-page__item-card">
+               <img src="img/sneakers.png" alt="">
+             </a>
+             <a href="#" class="item-card-small__item-title item-page__item-link">NUMBER 288</a>
+             <div class="item-card-small__item-response d-flex justify-content-between align-items-center">
+               <div class="item-response__rate">
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <a href="#" class="item-page__total-rates">114</a>
+               </div>
+             </div>
+             <div class="item-response__comments">
+               <i class="fa fa-comment-o" aria-hidden="true"></i>
+               <a href="#" class="item-page__total-comments">146</a>
+             </div>
+             <div class="item-card-small__item-subtitle item-page_subtitle">Кеды 'Grant'</div>
+             <div class="item-card-small__item-about item-page_price">
+               <div class="item-card-small__item-price yellow-price margin-price ">
+                 8800
+               </div>
+               <i class="fa fa-rub yellow-price" aria-hidden="true"></i>
+             </div>
+           </div>
+           <div class="main-slider__item-card-small slider-item-width item-page_width" data-num="11">
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <a href="#" class="item-card-small__jacket item-page__item-card">
+               <img src="img/gloves.png" alt="">
+             </a>
+             <a href="#" class="item-card-small__item-title item-page__item-link">PAUL SMITH</a>
+             <div class="item-card-small__item-response d-flex justify-content-between align-items-center">
+               <div class="item-response__rate ">
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <a href="#" class="item-page__total-rates">167</a>
+               </div>
+             </div>
+             <div class="item-response__comments">
+               <i class="fa fa-comment-o" aria-hidden="true"></i>
+               <a href="#" class="item-page__total-comments">60</a>
+             </div>
+             <div class="item-card-small__item-subtitle item-page_subtitle">Кожаные перчатки</div>
+             <div class="item-card-small__item-about item-page_price">
+               <div class="item-card-small__item-price yellow-price margin-price ">
+                 3199
+               </div>
+               <i class="fa fa-rub yellow-price" aria-hidden="true"></i>
+             </div>
+           </div>
+           <div class="main-slider__item-card-small slider-item-width item-page_width" data-num="12">
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <a href="#" class="item-card-small__jacket item-page__item-card">
+               <img src="img/jacket.png" alt="">
+             </a>
+             <a href="#" class="item-card-small__item-title item-page__item-link">КУРТКА Armani Jeans</a>
+             <div class="item-card-small__item-response d-flex justify-content-between align-items-center">
+               <div class="item-response__rate ">
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <i class="fa fa-star item-response__rate-star" aria-hidden="true"></i>
+                 <a href="#" class="item-page__total-rates">320</a>
+               </div>
+             </div>
+             <div class="item-response__comments">
+               <i class="fa fa-comment-o" aria-hidden="true"></i>
+               <a href="#" class="item-page__total-comments">43</a>
+             </div>
+             <div class="item-card-small__item-subtitle item-page_subtitle">Кожаная куртка на молнии</div>
+             <div class="item-card-small__item-about item-page_price">
+               <div class="item-card-small__item-price yellow-price margin-price ">
+                 12700
+               </div>
+               <i class="fa fa-rub yellow-price" aria-hidden="true"></i>
+             </div>
+           </div>
+          </div>
+          <div class="item-pagination item-page__pagination">
+            <ul class="item-pagination__list d-flex align-items-center item-page__paginator justify-content-start">
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer__company-name">BEIGE</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer__company-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut finibus
+            nibh. Nunc suscipit velit at varius pulvinar. Nunc efficitur leo tempus sem porta vehicula. Donec nec augue
+            ac tortor ullamcorper maximus. Suspendisse potenti. Duis sit amet lorem id justo faucibus porta. Fusce
+            pharetra eget lorem non venenatis. Donec at convallis nisl, sit amet pellentesque metus. Pellentesque
+            eleifend, leo ut pretium lobortis, est quam aliquet ligula, ut luctus purus dui quis purus. Nulla facilisi.
+            Donec fermentum iaculis libero nec finibus. Duis interdum vel elit vel sodales. Maecenas sit amet purus
+            dolor. Sed dignissim fringilla faucibus. Morbi vestibulum nisl ac risus lobortis, sit amet volutpat augue
+            fringilla.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-sm-6">
+          <ul class="footer__shop-list">
+            <li class="footer__shop-item wow flipInX"><a class="footer__item-link hover-line"
+                href="http://localhost:3000/items.html">Мужская
+                одежда</a></li>
+            <li class="footer__shop-item wow flipInX"><a class="footer__item-link hover-line"
+                href="http://localhost:3000/items.html">Женская
+                одежда</a></li>
+            <li class="footer__shop-item wow flipInX"><a class="footer__item-link hover-line"
+                href="http://localhost:3000/items.html">Детская
+                одежда</a></li>
+            <li class="footer__shop-item wow flipInX"><a class="footer__item-link hover-line"
+                href="http://localhost:3000/items.html">Обувь</a></li>
+            <li class="footer__shop-item wow flipInX"><a class="footer__item-link hover-line"
+                href="http://localhost:3000/items.html">Аксессуары</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-sm-6">
+          <ul class="footer__shop-info-list">
+            <li class="footer__shop-item wow flipInX shop-info-list__item"><a class="footer__item-link hover-line"
+                href="#">Распродажа</a></li>
+            <li class="footer__shop-item wow flipInX shop-info-list__item"><a class="footer__item-link hover-line"
+                href="#">Скидки
+                на товары</a></li>
+            <li class="footer__shop-item wow flipInX shop-info-list__item"><a class="footer__item-link hover-line"
+                href="#">Тренд
+                сезона</a></li>
+            <li class="footer__shop-item wow flipInX shop-info-list__item"><a class="footer__item-link hover-line"
+                href="#">Новые
+                поступления</a></li>
+            <li class="footer__shop-item wow flipInX shop-info-list__item"><a class="footer__item-link hover-line"
+                href="http://localhost:3000/calc.html">Калькулятор</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 offset-lg-1 col-sm-6">
+          <div class="footer__media-links">
+            <div class="footer__notifications wow flipInX" data-wow-delay="0.5s">Подписаться на рассылку</div>
+            <div class="footer__input wow flipInX" data-wow-delay="0.5s">
+              <input class="footer__input-mail" type="mail" placeholder="Ваш E-mail">
+              <button class="footer__input-button input-button" type="submit"></button>
+            </div>
+            <div class="footer__links-title wow flipInX" data-wow-delay="0.5s">Мы в соц сетях</div>
+            <ul class="footer__link-list d-flex">
+              <li class="media-links__item wow flipInX" data-wow-delay="0.5s">
+                <a href="#" class="media-links__link facebook-link ">
+                  <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="media-links__item wow flipInX" data-wow-delay="0.5s">
+                <a href="#" class="media-links__link twitter-link">
+                  <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="media-links__item wow flipInX" data-wow-delay="0.5s">
+                <a href="#" class="media-links__link youtube-link">
+                  <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="media-links__item wow flipInX" data-wow-delay="0.5s">
+                <a href="#" class="media-links__link instagram-link">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="footer__pay-block">
+            <div class="pay-block__title wow flipInX" data-wow-delay="0.7s">
+              Принимаем к оплате
+            </div>
+            <div class="pay-block__links">
+              <ul class="pay-block__list d-flex">
+                <li class="pay-block__item wow flipInX" data-wow-delay="0.7s"><a href="#" class="pay-block__link"><i
+                      class="fa fa-cc-visa" aria-hidden="true"></i></a></li>
+                <li class="pay-block__item wow flipInX" data-wow-delay="0.7s"><a href="#" class="pay-block__link"><i
+                      class="fa fa-cc-mastercard" aria-hidden="true"></i></a></li>
+                <li class="pay-block__item wow flipInX" data-wow-delay="0.7s"><a href="#" class="pay-block__link"><i
+                      class="fa fa-cc-paypal" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <div class="pay-block__company-info">
+              <div class="company-info__copyright wow flipInX" data-wow-delay="0.7s">Copyright © 2016 BEIGE</div>
+              <div class="company-info__about wow flipInX" data-wow-delay="0.7s">Онлайн магазин одежды для Вас!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
