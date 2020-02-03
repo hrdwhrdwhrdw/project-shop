@@ -97,7 +97,7 @@ gulp.task('browser-sync', async function () {
 });
 
 
-gulp.task('export', async function(){
+gulp.task('export', async function() {
   let buildHtml = gulp.src('app/**/*.html')
     .pipe(gulp.dest('dist'));
 
